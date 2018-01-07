@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<configuration>
+  <!-- 
+  <property>
+    <name>dt.application.{appName}.operator.{opName}.prop.{propName}</name>
+    <value>some-default-value (if value is not specified, it is required from the user or custom config when launching)</value>
+  </property>
+  -->
+  <!-- memory assigned to app master
+  <property>
+    <name>dt.attr.MASTER_MEMORY_MB</name>
+    <value>1024</value>
+  </property>
+  -->
+
+  <!--FileOutput Operator-->
+  <property>
+    <name>dt.operator.SAM_Writer.prop.filePath</name>
+    <value>file:///home/plaban/Test/Output/SAM/Mapped_Small_SAM</value>
+  </property>
+
+  <property>
+    <name>dt.operator.SAM_Writer.prop.outputFileName</name>
+    <value>mapped_Paired_FASTQs.sam</value>
+  </property>
+
+  <!--Mapper Operator-->
+  <property>
+    <name>dt.operator.Paired_FASTQ_Mapper.prop.refFilePath</name>
+    <value>/home/plaban/Test/Reference/Test/Indexed/sequence.fasta</value>
+  </property>
+
+  <property>
+    <name>dt.operator.Paired_FASTQ_Mapper.prop.fastqPath_1</name>
+    <value>/home/plaban/Test/Input/Small_FASTQ/R1.fq</value>
+  </property>
+
+  <property>
+    <name>dt.operator.Paired_FASTQ_Mapper.prop.fastqPath_2</name>
+    <value>/home/plaban/Test/Input/Small_FASTQ/R2.fq</value>
+  </property>
+
+</configuration>
+
